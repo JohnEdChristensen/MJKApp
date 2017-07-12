@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center|top"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context="com.mjkfab.mjkpipespooltracker.AddLocationActivity"
+    android:background="@color/colorPrimary"
+    >
+        <Button
+            android:id="@+id/unload_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="Unload"
+            android:onClick="unloadClick"
+            tools:ignore="ButtonStyle"
+            />
+
+        <Button
+            android:id="@+id/blast_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="Arrived in Blast"
+            android:onClick="blastClick"
+            tools:ignore="ButtonStyle" />
+
+
+
+        <Button
+            android:id="@+id/paint_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="Blast QC / Move to paint"
+            android:onClick="paintClick"
+            android:backgroundTint="@color/Red"/>
+
+
+    <Button
+        android:id="@+id/touchup_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Paint Report /  move to touch UP"
+        android:onClick="touchUpClick"
+        android:backgroundTint="@color/Red"/>
+
+    <Button
+        android:id="@+id/load_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="Load"
+        android:onClick="loadClick"/>
+
+    <RelativeLayout
+        android:id="@+id/loadingPanel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            android:indeterminateTint="@color/colorPrimaryDark"
+            android:progressTint="@color/Red" />
+    </RelativeLayout>
+
+
+</LinearLayout>

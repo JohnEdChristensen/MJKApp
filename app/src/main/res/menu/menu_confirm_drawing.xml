@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_confirm"
+        android:icon="@drawable/confirm_icon"
+        android:title="Confirm"
+        app:showAsAction="always"
+        />
+    <item
+        android:id="@+id/action_deny"
+        android:icon="@drawable/deny_icon"
+        android:title="Deny"
+        app:showAsAction="always"
+        />
+</menu>

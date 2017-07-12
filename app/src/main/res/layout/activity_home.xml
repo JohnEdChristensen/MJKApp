@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context="com.mjkfab.mjkpipespooltracker.HomeActivity">
+
+    <TextView
+        android:id="@+id/welcome_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login_welcome_message" />
+    <TextView
+        android:id="@+id/user_access_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Access: " />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha=".2"
+        android:visibility="visible"
+        app:srcCompat="@drawable/mjk_logo"
+        tools:ignore="ContentDescription"
+        android:layout_weight="2"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/home_scan_button"
+        android:onClick="onScanClick"
+        android:backgroundTint="@color/colorPrimary"
+        android:layout_marginBottom="20dp"
+
+        />
+</LinearLayout>

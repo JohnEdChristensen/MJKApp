@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_osndreport"
+        android:icon="@drawable/ic_action_osnd"
+        android:title="Report OSND"
+        app:showAsAction="always"
+        />
+    <item
+        android:id="@+id/action_view_drawing"
+        android:icon="@drawable/blueprint_icon"
+        android:title="View Drawing"
+        app:showAsAction="always"
+        />
+    <item
+        android:id="@+id/action_Add_Location"
+        android:icon="@drawable/add_location_icon"
+        android:title="Add Location"
+        app:showAsAction="always"
+        />
+
+</menu>

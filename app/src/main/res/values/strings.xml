@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">MJK PipeSpool Tracker</string>
+
+
+    <string name="login_welcome_message">Welcome</string>
+    <string name="login_username_hint">Username</string>
+    <string name="login_password_hint">Password</string>
+    <string name="login_button_text">Login</string>
+    <string name="login_success_text">Login Success!</string>
+    <string name="login_fail_text">Incorrect Username or Password</string>
+    <string name="home_scan_button">Scan</string>
+    <string name="pipe_error_scan_failed">ERROR: SCAN FAILED</string>
+    <string name="title_activity_scan">ScanActivity</string>
+    <string name="txtCredits"><a href="http://www.google.com">Google</a></string>
+    <string name="StoreLink">https://play.google.com/store/apps/details?id=com.mjkfab.mjkpipespooltracker</string>
+    <string-array name="searchParameters">
+        <item>Pipe ID</item>
+        <item>Branch/Plant</item>
+        <item>Location</item>
+        <item>Trailer Number</item>
+        <item>User</item>
+        <item>OSND</item>
+    </string-array>
+
+</resources>

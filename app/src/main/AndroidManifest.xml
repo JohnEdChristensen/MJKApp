@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mjkfab.mjkpipespooltracker">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <application
+        android:allowBackup="false"
+        android:icon="@mipmap/logo_square"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/logo_square"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".StartActivity"
+            android:label="MJK Production"
+            android:largeHeap="true"
+            android:theme="@style/NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".HomeActivity" />
+        <activity
+            android:name=".LoginActivity"
+            android:label="Login"
+            android:largeHeap="true"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".PipePage"
+            android:largeHeap="true"
+            android:parentActivityName=".HomeActivity" />
+        <activity
+            android:name=".AddLocationActivity"
+            android:largeHeap="true"
+            android:parentActivityName=".PipePage" />
+        <activity
+            android:name=".ScanActivity"
+            android:label="@string/title_activity_scan"
+            android:largeHeap="true"
+            android:parentActivityName=".HomeActivity"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".ConfirmDrawing"
+            android:largeHeap="true"
+            android:parentActivityName=".AddLocationActivity" />
+        <activity
+            android:name=".ViewDrawing"
+            android:largeHeap="true"
+            android:parentActivityName=".PipePage" />
+        <activity
+            android:name=".OSNDReport"
+            android:parentActivityName=".PipePage" />
+        <activity android:name=".SearchActivity" />
+        <activity android:name=".SearchResultActivity"></activity>
+    </application>
+
+</manifest>
